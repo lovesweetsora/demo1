@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  *{
+  margin:0px;
+  padding:0px;
+  }
+  span.but{
+	font-size:20px;
+	color:#cc0000;
+	font-family:'微软雅黑';
+	cursor:pointer;
+  }
+  .login{
+	width:360px;
+	height:440px;
+	box-shadow:0px 0px 10px #000;
+	margin:100px auto;
+	display:none;
+  }
+  .login .title{
+  width:100%;
+  height:60px;
+  background:red;
+  color:#fff;
+  line-height:60px;
+  text-indent:30px;
+  }
+  .title img{
+  float:right;
+  cursor:pointer;
+  margin:20px;
+  }
+
+  .login .main{
+  margin:35px 25px 0 35px;
+  border:0px solid red;
+  }
+  input.txt{
+  width:275px;
+  height:45px;
+  background:#eee url(images/ggg_login1.jpg)no-repeat 10px center;
+  margin-bottom:20px;
+  text-indent:35px;
+  }
+  input{
+  border:none;
+  }
+  input.pas{
+  background:#eee url(images/ggg_login2.jpg)no-repeat 10px center;
+  }
+  input.but{
+  width:120px;
+  height:40px;
+  background:red;
+  color:#fff;
+  cursor:pointer;
+  margin:10px 85px;
+  }
+  </style>
+ </head>
+ <body>
+  <span class='but'>注册</span>
+  <div class='login'>
+  <!--标题-->
+	<div class='title'>
+	注册
+	<img src='images/g_close.jpg'>
+	</div>
+  <!--内容区-->
+	<div class='main'>
+		<form>
+			<input type='text' class='txt' placeholder='名字' required>
+			<input type='password' class='txt pas' placeholder='密码' required>
+			<input type='password' class='txt pas' placeholder='再输' required>
+			<input type='email' class='txt' placeholder='邮箱' required>
+			<input type='submit' value='注册' class='but'>
+		</form>
+	</div>
+  </div>
+
+  <script src='js/jquery-1.8.3.js'></script>
+  <script>
+	$('span.but').click(function(){
+	alert(1);
+	});
+
+  </script>
+ </body>
+</html>
